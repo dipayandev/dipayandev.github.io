@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Original styles */
+  table {
+    font-family: Garamond;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ebe8e8;
+  }
+
+  /* Updated styles */
+  body {
+    font-family: Garamond, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    line-height: 1.6;
+  }
+
+  .highlight {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  /* Education styles */
+  .education {
+    margin-top: 20px;
+  }
+
+  .education h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  .education ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .education li {
+    margin-bottom: 10px;
+  }
+
+  .education img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dipayan Dev</h1>
+  <h3>M.Tech in AI @ IISc'24 | Sr. Data Engineer@WalmartLabs | Google Certified Professional Data Engineer</h3>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>About Me</h2>
+    <img src="unnamed.jpg" alt="Profile Picture" width="250" height="300" style="float: left; margin-right: 20px;">
+    <div class="content">
+      <p>
+        Highly accomplished and versatile professional with a unique blend of expertise in both Distributed Systems and Artificial Intelligence. With two times Master of Technology (M.Tech) degrees in Distributed Systems and Artificial Intelligence, I am passionate about bridging the realms of these cutting-edge fields. My goal is to drive innovation at the intersection of distributed systems and AI, revolutionizing industries and shaping the future of technology.
+      </p>
+      <p>
+        My book "<i>Deep Learning with Hadoop</i>" is published worldwide and available in top online stores. Big data enthusiasts can grab a copy from <a href="https://www.amazon.com/Deep-Learning-Hadoop-Dipayan-Dev/dp/1787124762" target="_blank">Deep Learning with Hadoop</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <div class="content">
+      <p>
+        I hold multiple Cloud Certifications in Azure and Google Cloud, and I am a Google Certified Professional Data Engineer.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Publications</h2>
+    <div class="content">
+      <p>
+        I have authored ~10 research papers with ~100 global citations in Distributed Systems and Computing. You can find my work on <a href="https://scholar.google.co.in/citations?user=mZRdPr4AAAAJ&hl=en" target="_blank">Google Scholar</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>IISc Bangalore</strong>
+        <img src="https://iisc.ac.in/wp-content/uploads/2020/08/IISc_Master_Seal_Black.jpg" width="32" height="32" alt="IISc Logo">
+        <ul>
+          <li><a href="https://iken.iisc.ac.in/mtech-online/AI.html" target="_blank">M.Tech (Artificial Intelligence)</a></li>
+          <li>2022-2024</li>
+          <li>
+            <h4>Coursework Details:</h4>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+              <li>Linear Algebra</li>
+              <li>Random Processes</li>
+              <li>Linear and Non-Linear Optimization</li>
+              <li>Machine Learning</li>
+              <li>Data Engineering at Scale</li>
+              <li>Quantum Computing</li>
+              <li>Reinforcement Learning</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>NIT Silchar</strong>
+        <ul>
+          <li><a href="http://cs.nits.ac.in/wp-content/uploads/2015/03/PG_CSE1.pdf" target="_blank">M.Tech (Distributed Systems)</a></li>
+          <li>2013-2015</li>
+          <li><b>Department Topper [CGPA - 9.19/10]</b></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="content">
+      <p>
+        Connect with me on <a href="https://www.linkedin.com/in/dipayandev/" target="_blank">LinkedIn</a> for more information.
+      </p>
+    </div>
+  </div>
+
+  <p style="text-align: center;">
+    Last updated on: <span id="last-updated"></span>
+  </p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lastUpdatedElement = document.getElementById("last-updated");
+    var currentDate = new Date().toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    lastUpdatedElement.textContent = currentDate;
+  });
+</script>
+
+</body>
+</html>
